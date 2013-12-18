@@ -1,0 +1,32 @@
+body 
+{
+  background-color: #000000;
+}
+
+.container 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+img {
+  position: relative;
+  top: 0;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  transition: opacity 2s, height 2s;
+}
+
+img.active {
+  opacity: 1;
+  height: 100%;
+}
+
+img.inactive {
+  opacity: 0;
+  height: 0;
+}

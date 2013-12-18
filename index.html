@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>PhotoViewer</title>
+    <link href="photofetch.css" rel="stylesheet" media="screen" />
+    <script src="photofetch.js"></script>
+    <script>
+      var startApp = function()
+      {
+        PhotoFetch.init('72157635008750304');
+        console.log('On LOAD!');
+      }
+      //This is important! document.addEventListener will fire on every XHR
+      window.addEventListener('load', startApp, true);
+    </script>
+  </head
+  <body>
+    <div class="container">
+      <img id="front_image" />
+      <img id="back_image"/>
+    </div>
+  </body>
+</html>
